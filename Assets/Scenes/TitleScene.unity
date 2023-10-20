@@ -336,6 +336,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chair_A
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c5f491d2fd9bb7449b70637b64cb7a15,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -460,7 +465,7 @@ Camera:
   m_GameObject: {fileID: 330585543}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1154,6 +1159,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1369931111}
   - component: {fileID: 1369931110}
+  - component: {fileID: 1369931112}
+  - component: {fileID: 1369931113}
+  - component: {fileID: 1369931114}
   m_Layer: 5
   m_Name: TitleMenue
   m_TagString: Untagged
@@ -1193,6 +1201,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1369931112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369931109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23d6d11dec6aa0244824ee8ecf6a4f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1369931113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369931109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc5b7f1b2b63251409ec204dd9a5a028, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1369931114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369931109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c07dd61d2df57240a0ed982a10905e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetSFXSliderSymbol: {x: 330, y: 80}
+  offsetSoundSliderSymbol: {x: 300, y: 160}
 --- !u!1 &1436222988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1256,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &1436222989
 MeshRenderer:
   m_ObjectHideFlags: 0

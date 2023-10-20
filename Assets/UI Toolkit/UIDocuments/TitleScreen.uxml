@@ -1,6 +1,24 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/USS%20Files/MainMenueUSS.uss?fileID=7433441132597879392&amp;guid=aa997b76e93d05548a1c777964fb3728&amp;type=3#MainMenueUSS" />
-    <ui:VisualElement name="Canvas" style="flex-grow: 1; flex-direction: row;">
-        <ui:VisualElement style="flex-grow: 0; background-color: rgba(96, 0, 0, 0.75); width: 250px; border-top-left-radius: 55px; border-bottom-left-radius: 55px; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+    <ui:VisualElement name="Canvas" style="flex-grow: 1; flex-direction: row; justify-content: flex-start; align-items: stretch;">
+        <ui:VisualElement name="ButtonsCanvas" style="flex-grow: 0; background-color: rgba(123, 0, 0, 0.94); width: 250px; border-top-left-radius: 55px; border-bottom-left-radius: 55px; border-top-right-radius: 0; border-bottom-right-radius: 0; align-items: center; justify-content: center; border-left-color: rgb(0, 0, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px;">
+            <ui:VisualElement name="Top" style="flex-grow: 1; align-items: center; justify-content: center;">
+                <ui:Button display-tooltip-when-elided="true" name="StartButton" class="button" style="border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0);" />
+                <ui:Button display-tooltip-when-elided="true" name="SettingsButton" class="button" style="background-image: url(&apos;project://database/Assets/UI%20Sprites/Buttons/Settings_Button.png?fileID=2800000&amp;guid=058fdf5b0c5d44f4f80dcd7cc072e462&amp;type=3#Settings_Button&apos;);" />
+                <ui:Button display-tooltip-when-elided="true" name="CreditsButton" class="button" style="background-image: url(&apos;project://database/Assets/UI%20Sprites/Buttons/Credits_Button.png?fileID=2800000&amp;guid=35a4f143e8f101b4997ac0238de023aa&amp;type=3#Credits_Button&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Bottom" style="flex-grow: 1; justify-content: flex-end;">
+                <ui:Button display-tooltip-when-elided="true" name="ExitButton" class="button" style="background-image: url(&apos;project://database/Assets/UI%20Sprites/Buttons/Exit_Button.png?fileID=2800000&amp;guid=83814d6b5f18dd64cbc3d17a5a914ee9&amp;type=3#Exit_Button&apos;);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightSide" style="flex-grow: 1; width: auto; height: auto; align-items: center; justify-content: center; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+            <ui:VisualElement name="SettingsCanvas" style="flex-grow: 1; width: 1500px; height: 100%; background-color: rgba(123, 0, 0, 0.9); border-top-right-radius: 55px; border-bottom-right-radius: 55px; position: absolute; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; left: 143px; visibility: visible; align-items: center; justify-content: center;">
+                <ui:Slider label="Sound" value="50" high-value="100" name="SoundSlider" style="width: 1000px;" />
+                <ui:Slider label="SFX" value="42" high-value="100" name="SFXSlider" />
+                <ui:VisualElement name="NewSFXDragger" picking-mode="Ignore" style="width: 80px; height: 80px; background-image: url(&apos;project://database/Assets/UI%20Sprites/Audio/Purple/1/Music_01.png?fileID=21300000&amp;guid=2aa5f9981b8d93242b00bf7d784caca1&amp;type=3#Music_01&apos;);" />
+                <ui:VisualElement name="NewSoundDragger" style="flex-grow: 0; width: 80px; height: 80px; background-image: url(&apos;project://database/Assets/UI%20Sprites/Audio/Fire/1/Music_01.png?fileID=21300000&amp;guid=2d54eed17aef3a04cbf1e76deb6e18ff&amp;type=3#Music_01&apos;);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CreditsCanvas" style="flex-grow: 1; width: 1500px; height: 100%; background-color: rgba(0, 44, 123, 0.9); border-top-right-radius: 55px; border-bottom-right-radius: 55px; position: absolute; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; left: 143px; visibility: hidden;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
