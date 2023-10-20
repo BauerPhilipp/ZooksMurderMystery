@@ -83,6 +83,6 @@ public class CustomSlider : MonoBehaviour
 
         Vector2 posSoundDraggerInWorldSpace = soundDragger.parent.LocalToWorld(soundDragger.transform.position);
 
-        newSoundDragger.transform.position = sfxDragger.parent.WorldToLocal(posSoundDraggerInWorldSpace - offsetSoundSliderSymbol);
+        newSoundDragger.transform.position = soundDragger.parent.WorldToLocal(posSoundDraggerInWorldSpace - offsetSoundSliderSymbol);
     }
 }
