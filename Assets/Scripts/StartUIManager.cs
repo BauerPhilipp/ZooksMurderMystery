@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class StartUIManager : MonoBehaviour
@@ -57,6 +59,7 @@ public class StartUIManager : MonoBehaviour
 
     private void StartButtonClicked(ClickEvent e)
     {
+        SceneManager.LoadScene(1);
         Debug.Log("Start clicked!");
     }
 

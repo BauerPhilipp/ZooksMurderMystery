@@ -16,7 +16,7 @@
                 <ui:Slider label="Sound" value="50" high-value="100" name="SoundSlider" style="width: 1000px;" />
                 <ui:Slider label="SFX" value="50" high-value="100" name="SFXSlider" />
                 <ui:VisualElement name="NewSFXDragger" picking-mode="Ignore" style="width: 80px; height: 80px; background-image: url(&apos;project://database/Assets/UI%20Sprites/Audio/Purple/1/Music_01.png?fileID=21300000&amp;guid=2aa5f9981b8d93242b00bf7d784caca1&amp;type=3#Music_01&apos;);" />
-                <ui:VisualElement name="NewSoundDragger" picking-mode="Ignore" style="width: 80px; height: 80px; background-image: url(&apos;project://database/Assets/UI%20Sprites/Audio/Fire/1/Music_01.png?fileID=21300000&amp;guid=2d54eed17aef3a04cbf1e76deb6e18ff&amp;type=3#Music_01&apos;); top: -100px;" />
+                <ui:VisualElement name="NewSoundDragger" picking-mode="Ignore" style="width: 80px; height: 80px; background-image: url(&apos;project://database/Assets/UI%20Sprites/Audio/Fire/1/Music_01.png?fileID=21300000&amp;guid=2d54eed17aef3a04cbf1e76deb6e18ff&amp;type=3#Music_01&apos;); top: -100px; left: auto;" />
             </ui:VisualElement>
             <ui:VisualElement name="CreditsCanvas" style="flex-grow: 1; width: 1500px; height: 100%; background-color: rgba(0, 44, 123, 0.9); border-top-right-radius: 55px; border-bottom-right-radius: 55px; position: absolute; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; left: 143px; visibility: hidden;" />
         </ui:VisualElement>
